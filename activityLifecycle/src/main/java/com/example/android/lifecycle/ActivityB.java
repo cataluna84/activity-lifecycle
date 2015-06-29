@@ -39,6 +39,7 @@ public class ActivityB extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b);
+        getWindow().getAttributes().windowAnimations = R.style.Fade;
         mActivityName = getString(R.string.activity_b_label);
         mStatusView = (TextView)findViewById(R.id.status_view_b);
         mStatusAllView = (TextView)findViewById(R.id.status_view_all_b);
